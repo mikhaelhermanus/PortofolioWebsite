@@ -1,8 +1,8 @@
 
 :root {
-  --gradient: linear-gradient(#FF69F0,#BB4DFF);
-  --primary: #FF69F0;
-  --secondary: #BB4DFF;
+  --gradient: linear-gradient(#33b5ff,#2490cd);
+  --primary:#33b5ff;
+  --secondary: #2490cd;
   --yellow: #ffc107;
   --text: #363940;
   --muted: #C4C4C4;

@@ -2,6 +2,10 @@ import React from 'react'
 import './SectionAbout.css';
 import AboutCategories from '../sectionAbout/aboutCategories/aboutCategories';
 import Fade from 'react-reveal/Fade';
+import Who from './about_paragraphs/Who'
+import Values from './about_paragraphs/Values'
+import Learning from './about_paragraphs/Learning'
+import BackgroundStory from './about_paragraphs/Background'
 
 class SectionAbout extends React.Component{
     state = {
@@ -26,6 +30,25 @@ class SectionAbout extends React.Component{
 
       render(){
         let { activeKey, categories } = this.state
+
+        let paragraphContent;
+        switch (activeKey) {
+          case 0:
+            paragraphContent = <Who />
+            break;
+          case 1:
+            paragraphContent = <Values />
+            break;
+          case 2:
+            paragraphContent = <Learning />
+            break;
+          case 3:
+            paragraphContent = <BackgroundStory />
+            break;  
+          default:
+            paragraphContent = <Who />
+            break;
+        }
           return(
             <Fade bottom cascade>
             <section id="about" className="section-about span_8_of_12">
@@ -38,9 +61,9 @@ class SectionAbout extends React.Component{
                   handleClick={this.handleClick} 
                 />
     
-                {/* <div className="section-about--display"> 
+                <div className="section-about--display"> 
                   { paragraphContent }
-                </div> */}
+                </div>
               </div>
             </section>
           </Fade>

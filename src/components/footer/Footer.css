@@ -1,0 +1,32 @@
+.footer {
+  /* background-color: #c4c4c4; */
+  padding: 12px 0;
+  margin-top: 50px;
+}
+
+.footer--text p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.inner-footer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .icons a {
+  padding-left: 15px;
+  color: var(--primary);
+  /* background-color: linear-gradient(var(--primary), var(--secondary)); */
+}
+
+
+@media (max-width: 736px) {
+  .footer { margin-top: 0; }
+
+  .inner-footer { flex-direction: column-reverse; }
+
+  .footer--text { margin-top: 10px; }
+}

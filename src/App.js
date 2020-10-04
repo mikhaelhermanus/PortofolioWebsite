@@ -12,6 +12,8 @@ import NavBar from './components/navbar/NavBar';
 import SectionProfile from './components/SectionProfile/SectionProfile';
 import SectionProject from './components/sectionProject/SectionProject';
 import SectionAbout from './components/sectionAbout/SectionAbout';
+import SectionContact from './components/sectionContact/SectionContact';
+// import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <SectionProfile/>
         <SectionProject/>
         <SectionAbout/>
+        <SectionContact/>
+        {/* <Footer/> */}
       </div>
       
     </ThemeProvider>
