@@ -4,11 +4,11 @@ function BackgroundStory() {
   return (
     <p>
       <p>
-        Having worked in the exciting live music environment, I developed a thorough understanding of managing tight deadlines, efficient problem-solving skills and understanding of technical tools and systems as well as a budget conscious approach to product creation. I gained a deep understanding of how to manage a team in a high stress environment for an extended period of time.
+        has worked in a private company in Indonesia, working on digitization projects to increase knowledge and experience. has a dream to build a startup company with personal capital, which aims to solve problems in Indonesia, as well as study the course of existing technological developments
       </p>
-      <br></br> 
+      <br></br>
       <p>
-        As a Empathic Idealist, I’m now moving into the tech industry to have a greater impact on people’s life and to be at the forefront of exciting changes in our society. Eager and enthusiastic with an open-mind, I cherish new ways of thinking and encourage thoughtful debate to generate new ideas.	
+        As a developer who is still inexperienced and has strong idealists, I really hope for a lot of knowledge input and sharing experiences with more senior developers on how to make yourself a good leader.
       </p>
     </p>
   )

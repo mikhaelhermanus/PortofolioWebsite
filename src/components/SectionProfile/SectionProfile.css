@@ -17,6 +17,10 @@
     z-index: 2;
     transition: color .5s ease;
   }
+
+  .vsCode {
+    margin-right: 30px;
+  }
   
   .button::before {
     position: absolute;
@@ -46,7 +50,7 @@
   
   .section-hero {
     margin-bottom: 5px;
-    background-image: url(../../images/background.png);
+    background-image: url(../../images/backgroundProfil_2.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
