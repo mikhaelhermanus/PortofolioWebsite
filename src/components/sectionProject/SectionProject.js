@@ -16,16 +16,19 @@ function SectionProject() {
                         title="Project 1"
                         description="This page is under Construction"
                         keyword="contact Developer"
+                        imgURL="/images/comingsoon.jpg"
                     />
                     <Project
                         title="Project 2"
                         description="This page is under Construction"
                         keyword="contact developer"
+                        imgURL="/images/comingsoon.jpg"
                     />
                     <Project
                         title="Project 3"
                         description="This page is under Construction"
                         keyword="contact developer"
+                        imgURL="/images/comingsoon.jpg"
                     />
 
 
