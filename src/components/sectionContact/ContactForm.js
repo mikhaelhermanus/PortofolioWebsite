@@ -1,7 +1,7 @@
 import React from 'react'
 import './SectionContact.css'
 
-// import axios from 'axios'
+import axios from 'axios';
 
 class ContactForm extends React.Component {
   state = {
@@ -23,34 +23,41 @@ class ContactForm extends React.Component {
   }
 
 
-  // formSubmit = (e) => {
-  //   e.preventDefault()
+  formSubmit = (e) => {
+    e.preventDefault()
 
-  //   this.setState({
-  //     buttonText: "sending..."
-  //   })
+    this.setState({
+      buttonText: "sending..."
+    })
 
-  //   let data = {
-  //     name: this.state.name,
-  //     email: this.state.email,
-  //     message: this.state.message
-  //   }
+    let data = {
+      email: this.state.email,
+      name: this.state.name,
+      phoneNumber: "",
+      subject: "FeedBack Web",
+      message: this.state.message
+    }
 
-  //   axios.post('https://morning-dawn-32463.herokuapp.com/sendtome', data)
-  //     .then(res => {
-  //       this.setState({ sent: true }, this.resetForm())
-  //       console.log("message sent");
-  //     })
-  //     .catch(() => {
-  //       console.log("message not Sent");
-  //       alert("message not sent")
-  //     })
-  // }
-
-  formSubmitTest(e) {
-    alert('message sent');
-    this.resetForm()
+    axios.post('http://api-webprofile.digisoul.id/message', data, {
+      headers: {
+        'x-api-key': 'sf6eHMw2mFmAe6jysPNRUYkrsJZiDJx0',
+        'Content-Type': 'application/json',
+      },
+    }).then(res => {
+      this.setState({ sent: true }, this.resetForm())
+      console.log("message sent");
+      alert("Pesan Berhasil Terkirim. Terima Kasih atas Feedback")
+    })
+      .catch(() => {
+        console.log("message not Sent");
+        alert("message not sent")
+      })
   }
+
+  // formSubmitTest(e) {
+  //   alert('message sent');
+  //   this.resetForm()
+  // }
 
 
   render() {
@@ -61,7 +68,7 @@ class ContactForm extends React.Component {
         <h4>Drop me a line</h4>
         <p className="chat">Let's chat business or ideas!</p>
 
-        <form action="" onSubmit={(e) => this.formSubmitTest(e)}>
+        <form action="" onSubmit={(e) => this.formSubmit(e)}>
           <div className="form-layout span_8_of_12">
             <div className="inputs">
               <input
