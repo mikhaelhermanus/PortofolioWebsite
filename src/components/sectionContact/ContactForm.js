@@ -42,6 +42,7 @@ class ContactForm extends React.Component {
       headers: {
         'x-api-key': 'sf6eHMw2mFmAe6jysPNRUYkrsJZiDJx0',
         'Content-Type': 'application/json',
+        'channel' : 'mikhael'
       },
     }).then(res => {
       this.setState({ sent: true }, this.resetForm())
